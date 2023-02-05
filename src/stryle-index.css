@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Kurale&family=Lemon&display=swap");
+
+/* global */
+.section {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* header */
+
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 15px 0;
+	z-index: 10;
+}
+
+/* introduction */
+.introduction {
+  /* TODO: ajustar esse backgroud */
+  background-image: url("./imgs/teste.svg");
+  background-repeat: no-repeat;
+}
+
+.introduction h1 {
+  font-family: "Lemon", cursive;
+  font-weight: 400;
+  position: relative;
+  font-size: 4em;
+}
+
+.introduction h3 {
+  font-size: 1.2em;
+  font-family: "Kurale", serif;
+  text-align: right;
+  padding: 20em 0em 0em 5em;
+}
+
+.titleIntro {
+  padding-top: 5em;
+}
+
+.socialMidia {
+  text-align: right;
+  display: block;
+}
+
+.socialMidia img {
+  width: 4.5em;
+}
+
+.socialMidia img:first-child {
+  margin-right: 1.5em;
+}
+
+.socialMidia img:hover {
+  cursor: pointer;
+  width: 6em;
+}
+
+/* projeto */
+
+.project h1 {
+  font-family: "Lemon", cursive;
+  text-align: center;
+  padding: 2rem;
+}
+
+.card {
+  margin: 0.6rem 0.3rem;
+}
+
+/* TODO: ajustar conforme o tamanho da tela */
+.card img {
+  width: 70%;
+  align-self: center;
+}
+
+.task {
+  opacity: 0;
+  width: 93.5%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  color: aquamarine;
+}
+
+/* TODO: ajustar */
+.card:hover .task {
+  opacity: 1;
+}
+
+.link {
+  font: "Kurale", serif;
+  font-size: 150%;
+  text-align: right;
+  margin: 1rem 0;
+}
+
+/* Contato */
+
+.contact h1 {
+  font-family: "Lemon", cursive;
+  text-align: center;
+  padding: 2rem;
+}
+
+.contact h3 {
+  font-size: 1.2em;
+  font-family: "Kurale", serif;
+  text-align: center;
+}
+
+.contact label:hover {
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+/* Dialog */
+
+/* TODO: por breakpoint para montar ser responsivo  */
+
+/* telas maiores q note e telas celular  */

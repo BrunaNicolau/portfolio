@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style/main.css" />
+    <link rel="stylesheet" href="./stryle-index.css" />
+    <link rel="stylesheet" href="./assets/style/main.css" />
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-1 form-check form-switch form-control-lg">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="bgSwitcher"
+              onchange="switcherBG()"
+              checked
+            />
+          </div>
+          <div class="col-md-1 offset-md-10">
+            <button
+              class="btn"
+              id="teste"
+              data-bs-toggle="modal"
+              data-bs-target="#meuModal"
+            >
+              <img src="imgs/list2.svg" alt="menu" width="32" height="32" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section introduction">
+      <div class="container">
+        <div class="row">
+          <!-- TODO: Por uma animação nas letras -->
+          <div class="col-6 titleIntro">
+            <h1>Hi,</h1>
+            <h1>I'm Bruna,</h1>
+            <h1>Web developer</h1>
+          </div>
+
+          <div class="col-6">
+            <h3>
+              Web develop with Angular, JavaScript, TypeScript and SpringBoot.
+              I've been working with web projects for two years in several
+              segments of the economy.
+            </h3>
+          </div>
+        </div>
+        <div class="socialMidia" style="margin-top: 10em">
+          <a href="https://www.linkedin.com/in/bruna-nicolau-01/">
+            <img src="./imgs/linkedin.svg" alt="linkedin icon with link" />
+          </a>
+          <a href="https://github.com/BrunaNicolau/">
+            <img src="./imgs/git.svg" alt="git icon with link" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project">
+      <div class="container">
+        <h1 onclick="rotaPortfolio()">Portfolio</h1>
+        <div class="row align-items-center">
+          <!-- TODO: Por hover com as task usadas  -->
+          <!-- TODO: click abre um dialog com a descrição e gif do projeto  -->
+          <div class="card col">
+            <img src="./imgs/git.svg" alt="Face da carta" />
+            <div class="task">test</div>
+          </div>
+          <div class="card col">
+            <img src="./imgs/git.svg" alt="Face da carta" />
+          </div>
+          <div class="card col">
+            <img src="./imgs/git.svg" alt="Face da carta" />
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="card col">
+            <img src="./imgs/git.svg" alt="Face da carta" />
+            <div class="task">test</div>
+          </div>
+          <div class="card col">
+            <img src="./imgs/git.svg" alt="Face da carta" />
+          </div>
+          <div class="card col">
+            <img src="./imgs/git.svg" alt="Face da carta" />
+          </div>
+        </div>
+        <div class="link">
+          <!-- TODO:Por link para seção portfolio -->
+          <a href="http://teste"> +Projects </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact">
+      <div class="container">
+        <h1>Contact me</h1>
+
+        <div class="row justify-content-md-center">
+          <h3 class="col-6">
+            If you wanna get in touch, talk to me about a project collaboration.
+            However, if you have other request or question, don't hesitate to
+            use the form.
+          </h3>
+        </div>
+
+        <!-- TODO: criar api de envio de email: -->
+        <form
+          class="pt-5"
+          action="mailto:brunanicolauolivera@gmail.com"
+          method="POST"
+        >
+          <div class="row pt-3">
+            <div class="col-6">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Name</label
+              >
+              <input
+                class="form-control"
+                type="text"
+                placeholder="your name"
+                aria-label="default input example"
+              />
+            </div>
+            <div class="col-6">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+          </div>
+
+          <div class="pt-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Message</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              placeholder="now write your awesome message :)"
+            ></textarea>
+          </div>
+          <div class="pt-3">
+            <button type="button" class="btn btn-primary">Send</button>
+          </div>
+        </form>
+
+        <div class="socialMidia" style="margin-top: 5em">
+          <a href="https://www.linkedin.com/in/bruna-nicolau-01/">
+            <img src="./imgs/linkedinTwo.svg" alt="linkedin icon with link" />
+          </a>
+          <a href="https://github.com/BrunaNicolau/">
+            <img src="./imgs/gitTwo.svg" alt="git icon with link" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="meuModal" class="modal fade" role="dialog" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Cabeçalho do modal -->
+         <div class="col-2">
+
+           <button
+             type="button"
+             class="btn close"
+             data-bs-dismiss="modal"
+             aria-label="Close"
+           >
+             <span aria-hidden="true">&times;</span>
+           </button>
+         </div>
+
+          <!-- Corpo do modal -->
+          <div class="modal-body" style="color: black;">
+            <p>Conteúdo no corpo do modal.</p>
+            <p>Aqui você pode inserir todo o conteúdo necessário.</p>
+            <p>Conteúdo no corpo do modal.</p>
+            <p>Aqui você pode inserir todo o conteúdo necessário.</p>
+            <p>Conteúdo no corpo do modal.</p>
+            <p>Aqui você pode inserir todo o conteúdo necessário.</p>
+            <p>Conteúdo no corpo do modal.</p>
+            <p>Aqui você pode inserir todo o conteúdo necessário.</p>
+            <p>Conteúdo no corpo do modal.</p>
+            <p>Aqui você pode inserir todo o conteúdo necessário.</p>
+            <p>Conteúdo no corpo do modal.</p>
+            <p>Aqui você pode inserir todo o conteúdo necessário.</p>
+            <p>Conteúdo no corpo do modal.</p>
+            <p>Aqui você pode inserir todo o conteúdo necessário.</p>
+            <p>Conteúdo no corpo do modal.</p>
+          </div>
+
+          <!-- Rodapé do modal-->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
