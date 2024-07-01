@@ -36,6 +36,9 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
+          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+            Welcome to my portfolio! I am delighted to have you here.
+          </p>
           <div>
             <Link
               href="/#contact"
@@ -43,8 +46,9 @@ const HeroSection = () => {
             >
               Hire Me
             </Link>
-            <Link
-              href="/"
+            <a
+              href="/files/cv.pdf"
+              download
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br 
               from-tertiary-500 via-primary-500 to-secondary-500"
             >
@@ -57,7 +61,7 @@ const HeroSection = () => {
               >
                 Download CV
               </span>
-            </Link>
+            </a>
           </div>
         </motion.div>
         <motion.div

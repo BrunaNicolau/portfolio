@@ -12,7 +12,6 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Node.js</li>
-        <li>Express</li>
         <li>PostgreSQL</li>
         <li>JavaScript</li>
         <li>Angular</li>
@@ -34,7 +33,8 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>Microsoft Azure Fundamentals</li>
+        <li>Azure Fundamentals AZ-900</li>
+        <li>Azure AI Fundamentals AI-900</li>
       </ul>
     ),
   },
