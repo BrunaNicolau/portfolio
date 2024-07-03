@@ -9,30 +9,19 @@ import ProjectCard from "../components/ProjectCard";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/img/projects/1.png",
+    title: "Game Rescue",
+    description: "This game is a classic side-scrolling shoot 'em up",
+    image: "/img/projects/resgate.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/BrunaNicolau/jogo_resgate",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/img/projects/2.png",
+    title: "Todo List",
+    description: "The endless todo list",
+    image: "/img/projects/todo_project.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/img/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/BrunaNicolau/endless_todo_list",
   },
 ];
 
@@ -57,10 +46,11 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
-      <h2 className={`text-center text-4xl font-bold mt-4 mb-8 md:mb-12 ${
+      <h2
+        className={`text-center text-4xl font-bold mt-4 mb-8 md:mb-12 ${
           changeTheme.theme ? "text-white" : "text-black"
-        }`}>
-
+        }`}
+      >
         My Projects
       </h2>
       <div className=" flex flex-row justify-center items-center gap-2 py-6">
