@@ -1,7 +1,8 @@
-```markdown
 # Project Portfolio
 
 This Next.js project is bootstrapped with create-next-app and showcases various projects I have worked on. Each project demonstrates different aspects of web development skills, ranging from frontend design to backend logic.
+
+You can acess my portfolio [here](https://bru-portfolio.vercel.app/).
 
 ## Getting Started
 
