@@ -19,7 +19,7 @@ const projectsData = [
     id: 2,
     title: "Todo List",
     description: "The endless todo list",
-    image: "/img/projects/todo_project.png",
+    image: "/img/projects/todo.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/BrunaNicolau/endless_todo_list",
   },
