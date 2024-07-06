@@ -36,15 +36,19 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+          <p
+            className={`${
+              changeTheme.theme ? "text-white" : "text-slate-900"
+            } text-base sm:text-lg mb-6 lg:text-xl`}
+          >
             Welcome to my portfolio! I am delighted to have you here.
           </p>
-          <div>
+          <div className="space-y-4 sm:space-y-0 sm:space-x-4">
             <Link
               href="/#contact"
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-tertiary-500 via-primary-500 to-secondary-500  text-white"
             >
-              Hire Me
+              Contact Me
             </Link>
             <a
               href="/files/cv.pdf"
