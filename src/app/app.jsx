@@ -14,18 +14,18 @@ export default function App({ pageProps }) {
 
   useEffect(() => {
     datadogRum.init({
-      applicationId: "1cba1d95-5af6-484a-a033-a248bf61ebda",
-      clientToken: "pub73c4ecc1a36377623f5ccb183c39ead0",
-      site: "us5.datadoghq.com",
-      service: "portofolio",
-      env: "production",
-      version: "1.0.0",
-      sampleRate: 20,
-      trackInteractions: true,
+      applicationId: '1cba1d95-5af6-484a-a033-a248bf61ebda',
+      clientToken: 'pub73c4ecc1a36377623f5ccb183c39ead0',
+      site: 'us5.datadoghq.com',
+      service: 'portofolio',
+      env: 'production',
+      sessionSampleRate: 100,
+      sessionReplaySampleRate: 20,
+      trackUserInteractions: true,
+      trackResources: true,
       trackLongTasks: true,
-      defaultPrivacyLevel: "mask-user-input",
-    });
-    datadogRum.startSessionReplayRecording();
+      defaultPrivacyLevel: 'mask-user-input',
+  });
   }, []);
 
   return (
@@ -33,9 +33,8 @@ export default function App({ pageProps }) {
       className={`flex min-h-screen flex-col ${
         changeTheme.theme ? "bg-neutral-950" : "bg-stone-300"
       }`}
-      {...pageProps}
     >
-      <Navbar />
+      <Navbar {...pageProps} />
       <div className="container mt-24 mx-auto px-12 py-4">
         <HeroSection />
         <AchievementsSection />
