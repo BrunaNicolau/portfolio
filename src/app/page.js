@@ -25,8 +25,8 @@ export default function Home({pageProps}) {
   }, []);
 
   return (
-    <Provider store={store} {...pageProps}>
-      <App></App>
+    <Provider store={store} >
+      <App {...pageProps}></App>
     </Provider>
   );
 }
