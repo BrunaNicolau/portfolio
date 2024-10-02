@@ -5,6 +5,7 @@ import MenuOverlay from "./MenuOverlay";
 import NavLink from "./NavLink";
 import ToggleSwitch from "./toggleSwitch";
 import { useSelector } from "react-redux";
+import { datadogRum } from "@datadog/browser-rum";
 
 const navLinks = [
   {
@@ -24,7 +25,7 @@ const navLinks = [
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const changeTheme = useSelector((state) => state.theme);
-
+  useEffect(() => {datadogRum.addAction('tela carregou')}, []);
   return (
     <nav
       className={`fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 ${
