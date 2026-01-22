@@ -51,7 +51,7 @@ const HeroSection = () => {
               Contact Me
             </Link>
             <a
-              href="/files/cv.pdf"
+              href="/files/bruna-cv-front.pdf"
               download
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br 
               from-tertiary-500 via-primary-500 to-secondary-500"
